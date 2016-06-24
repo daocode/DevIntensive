@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
+
+<LinearLayout android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
               tools:context=".ui.activities.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_large_72"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/color_accent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Проектов"
+           android:layout_gravity="center"
+           />
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проектов"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проектов"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -246,7 +291,11 @@
             android:layout_marginLeft="@dimen/spacing_medium_32"
             android:layout_marginRight="@dimen/spacing_normal_16">
 
-            <android.support.v4.widget.NestedScrollView
+    <android.support.v4.widget.NestedScrollView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/scroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -264,8 +313,9 @@
                     android:textColorHint="@color/grey"
                     android:focusable="false"
                     />
+            </android.support.design.widget.TextInputLayout>
+       </android.support.v4.widget.NestedScrollView>
 
-            </android.support.v4.widget.NestedScrollView>
         </LinearLayout>
 
         <ImageView
@@ -282,3 +332,5 @@
 
 
 </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
